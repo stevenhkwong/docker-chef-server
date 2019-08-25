@@ -11,6 +11,9 @@ docker run -d --rm \
     -e EXTERNAL_URL="https://chef-server.wongsrus.net.au" \
     harbor.wongsrus.net.au/swong/chef-server-manage
 
+#    -e CHEF_LICENSE=”accept” \
+
+
 cat<<EOT:
 
 	Run other chef server with commands

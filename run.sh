@@ -1,5 +1,6 @@
 #!/bin/sh
 
+VERSION=13.0.17
 
 mkdir -p data 
 docker run -d --rm \
@@ -9,7 +10,7 @@ docker run -d --rm \
     -p 0.0.0.0:5443:443 \
     --privileged \
     -e EXTERNAL_URL="https://chef-server.wongsrus.net.au" \
-    harbor.wongsrus.net.au/swong/chef-server-manage
+    harbor.wongsrus.net.au/swong/chef-server-manage:${VERSION}
 
 #    -e CHEF_LICENSE=”accept” \
 
